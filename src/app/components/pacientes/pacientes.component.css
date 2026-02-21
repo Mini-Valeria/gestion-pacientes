@@ -1,0 +1,191 @@
+/* ===== GENERAL ===== */
+.dashboard {
+  padding: 2rem 3rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #eef5ff, #f8fbff);
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: #1565c0;
+  font-weight: 600;
+}
+
+.logout-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+}
+
+/* ===== MÉTRICAS ===== */
+.stats {
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 14px;
+  width: 220px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.stat-card h3 {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1565c0;
+}
+
+/* ===== LAYOUT FORM + LIST ===== */
+.form-section,
+.list-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  margin-bottom: 2rem;
+}
+
+/* ===== FORMULARIO ===== */
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+.form-group input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #1565c0;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(21,101,192,0.1);
+}
+
+/* Botón principal ocupa dos columnas */
+.primary-btn {
+  grid-column: span 2;
+  padding: 0.8rem;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #0d47a1;
+  transform: translateY(-2px);
+}
+
+/* ===== LISTA ===== */
+.list-section h2 {
+  margin-bottom: 1rem;
+}
+
+.patient-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fbff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+}
+
+.patient-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+}
+
+.patient-info h3 {
+  margin-bottom: 0.3rem;
+  color: #1565c0;
+}
+
+.patient-info p {
+  margin: 0.2rem 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ===== BOTONES ACCIONES ===== */
+.actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.edit-btn {
+  background-color: #ffa000;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: #ff8f00;
+}
+
+.delete-btn {
+  background-color: #d32f2f;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* ===== MENSAJE VACÍO ===== */
+.empty {
+  text-align: center;
+  padding: 1.5rem;
+  color: #777;
+}
