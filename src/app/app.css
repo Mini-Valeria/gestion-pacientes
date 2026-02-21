@@ -1,0 +1,118 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5F7FA;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #1E3A8A;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.user-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #1E3A8A;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #E0F2FE;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #E0F2FE, #ffffff);
+  padding: 60px 40px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #1E3A8A;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #546E7A;
+  font-size: 16px;
+}
+
+/* CARDS */
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1E3A8A;
+}
+
+.card p {
+  color: #546E7A;
+  font-size: 14px;
+}
+
+/* MÉTRICAS */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.stat-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.stat-box h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #1E3A8A;
+}
+
+.stat-box p {
+  margin-top: 8px;
+  color: #546E7A;
+}
